@@ -30,6 +30,7 @@ function Footer() {
         </div>
 
         {/* <!-- Contact Info Section --> */}
+        {/* contact */}
         <div className="footer-section">
           <h3>Contact Info</h3>
           <ul>

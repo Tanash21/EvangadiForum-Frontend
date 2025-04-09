@@ -18,7 +18,7 @@ function Footer() {
         </div>
         </div>
 
-        {/* <!-- Useful Links Section --> */}
+        {/* <!-- Useful Links Section l --> */}
 
         <div className="footer-section">
           <h3>Useful Links</h3>

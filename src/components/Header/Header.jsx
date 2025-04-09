@@ -9,7 +9,7 @@ function Header({ logout = () => {} }) {
   const { user } = useContext(AppState);
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
-
+// 
   useEffect(() => {
     const handleScroll = () => {
       setSticky(window.scrollY > 1);

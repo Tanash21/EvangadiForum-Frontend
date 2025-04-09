@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="main-footer">
       <div className="footer-container">
-       <div> 
+       <div className="picture"> 
         <div className="logo">
           <img src="https://cdn.brandfetch.io/idZ_nRYZnP/w/200/h/28/theme/light/logo.png?c=1dxbfHSJFAPEGdCLU4o5B" alt="" />
         </div>
@@ -18,7 +18,7 @@ function Footer() {
         </div>
         </div>
 
-        {/* <!-- Useful Links Section l --> */}
+        {/* <!-- Useful Links Section --> */}
 
         <div className="footer-section">
           <h3>Useful Links</h3>
@@ -30,7 +30,6 @@ function Footer() {
         </div>
 
         {/* <!-- Contact Info Section --> */}
-        {/* contact */}
         <div className="footer-section">
           <h3>Contact Info</h3>
           <ul>

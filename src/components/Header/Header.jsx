@@ -23,23 +23,23 @@ function Header({ logout = () => {} }) {
       logout();
       localStorage.removeItem("token");
       navigate("/login");
-    } else {
-      navigate("/login");
     }
+    if (!token) {
+      navigate("/");
+    }
+  };
+  const logPage = () => {
+    navigate("/login");
   };
 
   return (
     <header className={`header ${sticky ? "sticky" : ""}`}>
       <div className="nav-container">
-        <Link to="/" className="logo">
+        <Link to={token ? "/" : "/login"} className="logo">
           <img src={evangadiLogo} alt="evangadiLogo" />
         </Link>
-        <input type="checkbox" id="menu-toggle" className="menu-toggle" />
-        <label htmlFor="menu-toggle" className="menu-icon">
-          ☰
-        </label>
         <nav className="nav-links">
-          <Link to="/" className="links">
+          <Link className="links" to={token ? "/" : "/login"}>
             Home
           </Link>
           <Link to="/how-it-works" className="links">
@@ -53,5 +53,4 @@ function Header({ logout = () => {} }) {
     </header>
   );
 }
-
 export default Header;

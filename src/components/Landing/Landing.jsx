@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classes from "./Landing.module.css";
 import Login from "../../pages/Login/Login";
 import Register from "../../pages/Register/Register";
-import About from "../about/About";
+import About from "../About/About";
 
 function Landing() {
   const [showLogin, setShowLogin] = useState(true);
